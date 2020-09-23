@@ -45,7 +45,7 @@ export class ClusterAutoscaler extends cdk.Construct {
   /**
    * The Kubernetes Resource that defines the Cluster Autoscaler K8s resources.
    */
-  public readonly clusterAutoscaler: eks.KubernetesResource
+  public readonly clusterAutoscaler: eks.KubernetesManifest
 
   /**
    * Constructs a new instance of the Cluster Autoscaler.
@@ -90,7 +90,7 @@ export class ClusterAutoscaler extends cdk.Construct {
     });
 
     // define the Kubernetes Cluster Autoscaler manifests
-    this.clusterAutoscaler = new eks.KubernetesResource(this, 'cluster-autoscaler-manifest', {
+    this.clusterAutoscaler = new eks.KubernetesManifest(this, 'cluster-autoscaler-manifest', {
       cluster: props.cluster,
       manifest: [
         {

@@ -1,6 +1,6 @@
 {
-  "name": "@arhea/aws-cdk-eks-cluster-autoscaler",
-  "version": "0.5.0",
+  "name": "@vandreykiv/aws-cdk-eks-cluster-autoscaler",
+  "version": "0.6.1",
   "description": "A CDK Construct Library for Cluster Autoscaler.",
   "main": "lib/index.js",
   "scripts": {
@@ -21,17 +21,17 @@
     "node": ">= 10.3.0"
   },
   "devDependencies": {
-    "@aws-cdk/assert": "^1.15.0",
+    "@aws-cdk/assert": "~1.63.0",
     "@types/jest": "^24.0.18",
-    "aws-cdk": "^1.15.0",
+    "aws-cdk": "~1.63.0",
     "ts-node": "^8.1.0",
     "typescript": "~3.6.2"
   },
   "dependencies": {
-    "@aws-cdk/aws-autoscaling": "^1.15.0",
-    "@aws-cdk/aws-eks": "^1.15.0",
-    "@aws-cdk/aws-iam": "^1.15.0",
-    "@aws-cdk/core": "^1.15.0",
+    "@aws-cdk/aws-autoscaling": "~1.63.0",
+    "@aws-cdk/aws-eks": "~1.63.0",
+    "@aws-cdk/aws-iam": "~1.63.0",
+    "@aws-cdk/core": "~1.63.0",
     "source-map-support": "^0.5.9"
   },
   "directories": {
@@ -39,10 +39,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arhea/aws-cdk-eks-cluster-autoscaler.git"
+    "url": "git+https://github.com/vandreykiv/aws-cdk-eks-cluster-autoscaler.git"
   },
   "bugs": {
-    "url": "https://github.com/arhea/aws-cdk-eks-cluster-autoscaler/issues"
+    "url": "https://github.com/vandreykiv/aws-cdk-eks-cluster-autoscaler/issues"
   },
-  "homepage": "https://github.com/arhea/aws-cdk-eks-cluster-autoscaler#readme"
+  "homepage": "https://github.com/vandreykiv/aws-cdk-eks-cluster-autoscaler#readme"
 }
