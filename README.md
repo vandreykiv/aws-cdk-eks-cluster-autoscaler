@@ -14,13 +14,13 @@ This module makes it easy to deploy and manage Cluster Autoscaler from AWS CDK f
 You can install this with `npm` or `yarn`.
 
 ```bash
-npm i `@arhea/aws-cdk-eks-cluster-autoscaler` --save
+npm i `@vandreykiv/aws-cdk-eks-cluster-autoscaler` --save
 ```
 
 or
 
 ```bash
-yarn add `@arhea/aws-cdk-eks-cluster-autoscaler`
+yarn add `@vandreykiv/aws-cdk-eks-cluster-autoscaler`
 ```
 
 ## Usage

@@ -1,6 +1,6 @@
 {
   "name": "@vandreykiv/aws-cdk-eks-cluster-autoscaler",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "A CDK Construct Library for Cluster Autoscaler.",
   "main": "lib/index.js",
   "scripts": {

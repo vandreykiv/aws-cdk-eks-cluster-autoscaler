@@ -172,6 +172,17 @@ export class ClusterAutoscaler extends cdk.Construct {
               apiGroups: ['batch', 'extensions'],
               resources: ['jobs'],
               verbs: ['get', 'list', 'watch', 'patch']
+            },
+            {
+              apiGroups: ['coordination.k8s.io'],
+              resources: ['leases'],
+              verbs: ['create']
+            },
+            {
+              apiGroups: ['coordination.k8s.io'],
+              resourceNames: ['cluster-autoscaler'],
+              resources: ['leases'],
+              verbs: ['get', 'update']
             }
           ]
         },
@@ -306,7 +317,7 @@ export class ClusterAutoscaler extends cdk.Construct {
                 serviceAccountName: 'cluster-autoscaler',
                 containers: [
                    {
-                      image: 'k8s.gcr.io/cluster-autoscaler:' + props.version,
+                    image: 'k8s.gcr.io/autoscaling/cluster-autoscaler:' + props.version,
                       name: 'cluster-autoscaler',
                       resources: {
                          limits: {
@@ -353,6 +364,5 @@ export class ClusterAutoscaler extends cdk.Construct {
         }
       ]
     });
-
   }
 }
